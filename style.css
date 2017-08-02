@@ -102,6 +102,13 @@ footer a{
 	color: #922031;
 }
 
+@media screen and (max-width: 480px) {
+	.plusAndMinus {
+	    width: 40px;
+	    height: 40px;
+	}
+}
+
 
 
 
