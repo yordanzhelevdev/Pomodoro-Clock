@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Pomodo Clock</title>
+		<script type="text/javascript" src="script.js" async></script>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<audio id="myAudio">
+			<source src="ding.wav" type="audio/wav" />
+		</audio>
+			<h1>Pomodoro Clock</h1>
+			<div id="tomatoTimer">
+				<h2>SESSION</h2>
+				<p>
+					<button onclick="timeControl('timer','+')" class="plusAndMinus">+</button>
+						<span id="showHours"></span>:<span id="showMinutes"></span>:<span id="showSeconds"></span>
+					<button onclick="timeControl('timer','-')" class="plusAndMinus">-</button>
+				</p>
+				
+				<h2>BREAK</h2>
+				<p>
+					<button onclick="timeControl('break','+')" class="plusAndMinus">+</button>
+						<span id="breakHours"></span>:<span id="breakMinutes"></span>:<span id="breakSeconds"></span>
+					<button onclick="timeControl('break','-')" class="plusAndMinus">-</button>
+				</p>
+				
+				<p> Session:<br />
+					<span id="hours"></span>:<span id="minutes"></span>:<span id="seconds"></span>
+				</p>
+					
+				<p> Break:<br />
+					<span id="showBreakHours"></span>:<span id="showBreakMinutes"></span>:<span id="showBreakSeconds"></span>
+				</p>
+				
+				<button onclick="startCount()" class="startAndPause">Start</button>
+				<button onclick="stopCount()" class="startAndPause">Stop</button>
+		</div>
+
+		<footer>
+	    	Designed & Coded by
+	    	<a href="https://www.yordanzhelevdev.io" target="_blank">
+	        Yordan Zhelev</a>
+        </footer>
+
+	</body>
+</html>
